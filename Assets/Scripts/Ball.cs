@@ -43,6 +43,7 @@ public class Ball : MonoBehaviour
         ScoreZone scoreZone = collision.GetComponent<ScoreZone>();
         if (scoreZone)
         {
+            // Send the GameManager the ScoreZone Id of the Game to add score to the player
             gameManager.OnScoreZoneReached(scoreZone.id);
             ResetBall();
             InitialPush();

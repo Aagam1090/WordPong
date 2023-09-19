@@ -7,9 +7,13 @@ public class ScoreText : MonoBehaviour
 {
     public TextMeshProUGUI text;
 
-
-    public void SetScore(int value)
+    public void SetScore(string value)
     {
-        text.text = value.ToString();
+        text.text = value;
+    }
+
+    public string GetScore()
+    {
+        return text.text;
     }
 }
