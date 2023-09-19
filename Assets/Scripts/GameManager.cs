@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public int scorePlayer1, scorePlayer2;
     public ScoreText scoreTextLeft, scoreTextRight;
     public BallText ballText;
+
+    public string word = "APPLE";
+
     private string res1;
     private string res2;
 
@@ -14,37 +17,21 @@ public class GameManager : MonoBehaviour
     {
         res1 = scoreTextLeft.GetScore();
         res2 = scoreTextRight.GetScore();
+
+        string curr = ballText.getText();
         if (id == 1)
         {
-            if (res1.Equals("-"))
-            {
-                string curr = ballText.getText();
-                res1 = curr;
-            }
-            else
-            {
-                string curr = ballText.getText();
-                res1 = scoreTextRight.GetScore() + curr;
-            }
-            
+            res1 += curr;
         }
         else
         {
-            if (res2.Equals("-"))
-            {
-                string curr = ballText.getText();
-                res2 = curr;
-            }
-            else
-            {
-                string curr = ballText.getText();
-                res2 = scoreTextRight.GetScore() + curr;
-            }
+            res2 +=  curr;
         }
-
-        UpdateScores();
+        int idx = Random.Range(0, word.Length);
+        ballText.setText(word[idx].ToString());
+        UpdateScores(res1,res2);
     }
-    public void UpdateScores()
+    public void UpdateScores(string res1, string res2)
     {
         scoreTextLeft.SetScore(res1);
         scoreTextRight.SetScore(res2);

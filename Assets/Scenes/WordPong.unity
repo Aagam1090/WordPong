@@ -374,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTextObj: {fileID: 56954636}
+  gameManager: {fileID: 1650824032}
 --- !u!4 &138007035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4947481806860439954, guid: a0f98af236f844c63b733afaed284066, type: 3}
@@ -673,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723595801014864988, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 170
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1723595801014864988, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -689,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3414308004544371926, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_text
-      value: '-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5154705620706407446, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_Name
@@ -1175,6 +1176,7 @@ MonoBehaviour:
   scoreTextLeft: {fileID: 4257555403232552043}
   scoreTextRight: {fileID: 840645119}
   ballText: {fileID: 56954640}
+  word: apple
 --- !u!4 &1683142618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1531739382815709666, guid: 7e46e68475c624b50989e1ddf35004ff, type: 3}
@@ -1414,7 +1416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723595801014864988, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 170
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1723595801014864988, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1430,7 +1432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3414308004544371926, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_text
-      value: '-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5154705620706407446, guid: 20561245bb2bf41fbad576269cdc681a, type: 3}
       propertyPath: m_Name
