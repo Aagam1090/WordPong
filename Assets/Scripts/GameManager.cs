@@ -20,12 +20,12 @@ public class GameManager : MonoBehaviour
 
         string curr = ballText.getText();
         if (id == 1)
-        {
-            res1 += curr;
+        {   if(!res1.Contains(curr))
+                res1 += curr;
         }
         else
-        {
-            res2 +=  curr;
+        {   if(!res2.Contains(curr))
+                res2 +=  curr;
         }
         int idx = Random.Range(0, word.Length);
         ballText.setText(word[idx].ToString());
