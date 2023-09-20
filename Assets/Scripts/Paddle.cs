@@ -11,6 +11,7 @@ public class Paddle : MonoBehaviour
     private float processInput()
     {
         float movement = 0f;
+        if(!GameManager.isGameOver){
         switch (id)
         {
             case 1:
@@ -20,7 +21,9 @@ public class Paddle : MonoBehaviour
                 movement = Input.GetAxis("MovePlayer2");
                 break;
         }
+        }
         return movement;
+
     }
     private void Move(float movement)
     {
@@ -30,7 +33,7 @@ public class Paddle : MonoBehaviour
         
     }
     private void Update()
-    {
+    {  
         float movement = processInput();
         Move(movement);
     }
